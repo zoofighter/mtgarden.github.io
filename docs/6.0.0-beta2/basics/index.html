@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v6.2.0 (https://qwtel.com/hydejack/) 
+-->
+
+
+
+
+
+
+
+
+
+<head>
+  <!-- =============== -->
+<!-- META            -->
+<!-- =============== -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-rim-auto-match" content="none">
+
+
+
+
+  <title>Basics &middot; Hydejack</title>
+
+
+
+<meta name="description" content="A pretentious two-column Jekyll theme, stolen by @qwtel from Hyde. You could say it was.. hydejacked.
+">
+
+
+
+<!-- =============== -->
+<!-- LINKS           -->
+<!-- =============== -->
+<link rel="canonical" href="https://qwtel.com/hydejack/docs/6.0.0-beta2/basics/" />
+
+<link rel="alternate" type="application/atom+xml" title="Hydejack Feed" href="https://qwtel.com/hydejack/feed.xml">
+
+
+
+
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+<script>
+  !function(n,e){function t(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function o(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}n._loaded=!1,n.loadJSDeferred=function(a,d){function r(){n._loaded=!0;var r=e.createElement("script");r.src=a,d&&(("onload"in r?t:o)(r,d),r.onload||t(r,d));var l=e.getElementsByTagName("script")[0];l.parentNode.insertBefore(r,l)}n._loaded?r():n.addEventListener?n.addEventListener("load",r,!1):n.attachEvent?n.attachEvent("onload",r):n.onload=r}}(window,document);
+
+  !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+
+  !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this);
+
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- =============== -->
+<!-- STYLES          -->
+<!-- =============== -->
+<!--[if gt IE 8]><!---->
+<style>
+  
+  .clearfix,.sidebar-social::after{content:"";display:table;clear:both}article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}*{box-sizing:border-box}html,body{margin:0;padding:0}html{font-size:16px;line-height:1.75}body{color:#333;background-color:#fff;overflow-y:scroll}a{text-decoration:none}.lead{margin-left:-1rem;margin-right:-1rem}img,.img{display:block;max-width:100%;margin-bottom:1rem;border:none}img.lead,.img.lead{max-width:calc(100% + 2rem);width:calc(100% + 2rem)}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-weight:bold;text-rendering:optimizeLegibility}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:3rem 0 1rem;line-height:1.6}h1,.h1{font-size:2rem;line-height:1.25}h2,.h2{font-size:1.5rem}h3,.h3{font-size:1.17em}p{margin-top:0;margin-bottom:1rem}p.lead{font-size:1.25rem;font-weight:300;padding:0 1rem}ul,ol,dl{margin-top:0;margin-bottom:1rem}ul,ol{padding-left:1.25rem}hr{position:relative;margin:1.5rem 0;border:0;border-top:1px solid #eee;border-bottom:1px solid #fff}h4,h5,h6,.h4,.h5,.h6{margin-bottom:0.5rem;font-size:1rem}footer{margin-bottom:2rem}.page,.post{margin-bottom:3em}.page li+li,.post li+li{margin-top:.25rem}.page-title,.post-title{margin-top:0}.post-date{display:block;margin-top:-0.5rem;margin-bottom:1rem;color:#9a9a9a}.related-posts{padding-left:0;list-style:none}.related-posts>li,.related-posts>li+li{margin-top:1rem}.related-posts>li>small,.related-posts>li+li>small{font-size:75%;color:#9a9a9a}.message{margin-bottom:1rem;padding:1rem;color:#787878;background-color:#f9f9f9;margin-left:-1rem;margin-right:-1rem}body,main{position:relative;overflow-x:hidden}@media screen{body::before{content:'';width:.5rem;background:#e5e5e5;position:absolute;left:0;top:0;bottom:0}}@media screen and (min-width: 40em){html{font-size:17px}}@media screen and (min-width: 54em){html{font-size:16px}}@media screen and (min-width: 72em){html{font-size:17px}}@media screen and (min-width: 125em){html{font-size:18px}}.sr-only{display:none}.sixteen-nine{position:relative}.sixteen-nine::before{display:block;content:"";width:100%;padding-top:56.25%}.sixteen-nine>*{position:absolute;top:0;left:0;right:0;bottom:0}a,.a{position:relative;padding-bottom:.15rem;border-bottom:1px solid}.img{overflow:hidden;background-color:#f9f9f9}.img>img{margin:0;width:100%;height:100%}h1+hr,h2+hr,h3+hr,h4+hr,h5+hr,h6+hr{margin-top:0}.sidebar{color:rgba(255,255,255,0.75);text-align:left}.sidebar::before{content:"";position:absolute;z-index:2;top:0;left:0;bottom:0;right:0;background:linear-gradient(to bottom, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 100%)}.sidebar a{color:#fff;border-bottom-color:rgba(255,255,255,0.2)}#_yDrawer{position:relative;padding:1rem 0}@media screen{#_yDrawer{padding:2rem 1rem;min-height:640px;min-height:100vh}}@media screen and (min-width: 54em){#_yDrawer{position:fixed;top:0;left:0;bottom:0;width:18rem;margin-left:0}}@media screen and (min-width: 97.5em){#_yDrawer{width:calc(50% - 28rem)}}@media screen{#_yDrawer.loaded{min-height:0;padding:0}}.sidebar-bg{position:absolute;top:0;right:0;bottom:0;left:0;background:#202020 center / cover}.sidebar-sticky{position:relative;padding-left:1rem;padding-right:1rem;z-index:3}@media screen{.sidebar-sticky{position:absolute;right:1rem;bottom:1rem;left:1rem}}.sidebar-about>h1{color:#fff;font-size:2rem}.sidebar-nav>ul{list-style:none;padding-left:0}.sidebar-nav>ul>li:last-child>.sidebar-nav-item{border-bottom:1px solid rgba(255,255,255,0.2)}a.sidebar-nav-item{font-weight:bold;display:block;line-height:1.75;margin:0 -2rem;padding:.25rem 2rem;border-top:1px solid rgba(255,255,255,0.2);border-bottom:none}@media screen{.y-drawer-scrim{z-index:2}.y-drawer-content{width:18rem;left:-17.5rem;z-index:3}}@media screen and (min-width: 97.5em){.y-drawer-content{width:calc(50% - 28rem)}}.sidebar-social{margin-bottom:.5rem}.sidebar-social>ul{list-style:none;padding-left:0;margin:0 -.25rem}.sidebar-social>ul>li{float:left;margin:0 .25rem}.sidebar-social>ul>li>a{display:inline-block;text-align:center;font-size:1.6rem;line-height:3rem;width:3.125rem;height:4rem;padding:.5rem 0}.sidebar-social>ul li+li{margin-top:0}.fixed-top{position:fixed;top:0;left:0;width:100%;z-index:1}.navbar>.content{padding-top:0;padding-bottom:0;min-height:0;height:0}.menu{display:inline-block;padding:1.75rem 1.5rem;border-bottom:none;margin-left:-1.5rem;color:#9a9a9a !important}@media screen and (min-width: 54em){.menu{padding:1.25rem 1.5rem;position:absolute;left:-9999px}.menu:focus{position:static}}.shadow-main{pointer-events:none}.loading{display:none}@media print{.menu{display:none}}.shadow-main{opacity:0;will-change:opacity}.loading{position:absolute;top:0;right:0;padding:5.25rem 4.5rem;transform-origin:top right;transform:scale(0.33)}.content{position:relative;margin-left:auto;margin-right:auto;padding:5rem 1rem 12rem}@media screen{.content{max-width:38rem;padding-left:1.5rem;min-height:100vh}}@media screen and (min-width: 54em){.content{max-width:42rem;padding:4rem 1rem 12rem;margin-left:22rem;margin-right:4rem}}@media screen and (min-width: 72em){.content{margin-left:22rem;margin-right:4rem}}@media screen and (min-width: 92em){.content{max-width:48rem}}@media screen and (min-width: 97.5em){.content{margin:auto}}.me{float:right;width:6.5rem;height:6.5rem;margin-left:1rem;margin-bottom:.5rem;border-radius:100%;position:relative}@media screen and (min-width: 40em){.me{width:7rem;height:7rem}}@media screen and (min-width: 54em){.me{width:6.5rem;height:6.5rem}}@media screen and (min-width: 60em){.me{width:7rem;height:7rem}}main>footer{position:absolute;bottom:0;left:0;right:0;padding:0 1rem;color:#9a9a9a;font-size:smaller;text-align:center}main>footer>p{margin-bottom:0}html{font-family:Georgia, serif}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-family:Helvetica, Arial, sans-serif}
+
+</style>
+
+
+<link rel="preload" href="/hydejack/assets/css/hydejack.css?v=6.2.0" as="style" onload="this.rel='stylesheet'">
+
+<style id="_pageStyle">
+
+.content a{color:#8e5c75;border-color:rgba(142,92,117,0.2)}.content a:hover{border-color:#8e5c75}:focus{outline-color:#8e5c75}::selection{color:#fff;background:#8e5c75}::-moz-selection{color:#fff;background:#8e5c75}
+
+</style>
+
+
+<noscript>
+  <link rel="stylesheet" href="/hydejack/assets/css/hydejack.css?v=6.2.0">
+
+  
+  
+  
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Noto+Serif:400,400i,700,700i">
+    <style>
+      html { font-family: 'Noto Serif', Georgia, serif }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: 'Roboto Slab', Helvetica, Arial, sans-serif }
+    </style>
+  
+
+  
+  <link rel="stylesheet" href="/hydejack/assets/icomoon/style.css">
+</noscript>
+<!--<![endif]-->
+
+</head>
+
+<body>
+  <!-- =============== -->
+<!-- MENU            -->
+<!-- =============== -->
+<div class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <a id="_menu" class="menu no-hover" href="#_title">
+      <span class="sr-only">Menu</span>
+      <span>☰</span>
+    </a>
+  </div>
+</div>
+
+<!-- =============== -->
+<!-- CONTENT         -->
+<!-- =============== -->
+<div id="_yPushState">
+  <main id="_main" class="content" role="main" data-color="#8e5c75" data-image="/hydejack/assets/img/doc.jpg">
+    <article class="page" role="article">
+  <h1 class="page-title">Basics</h1>
+  
+
+  <hr/>
+
+  <p class="message"><strong>NOTE</strong>: This document is outdated. Unless you’re using an older version of Hydejack, please refer to <a href="https://qwtel.com/hydejack/docs/latest/">the most recent documentation</a>.</p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul id="markdown-toc">
+  <li><a href="#table-of-contents" id="markdown-toc-table-of-contents">Table of Contents</a></li>
+  <li><a href="#adding-a-category-or-tag" id="markdown-toc-adding-a-category-or-tag">Adding a category or tag</a>    <ul>
+      <li><a href="#tags-and-categories-in-jekyll" id="markdown-toc-tags-and-categories-in-jekyll">Tags and categories in Jekyll</a></li>
+      <li><a href="#tags-and-categories-in-hydejack" id="markdown-toc-tags-and-categories-in-hydejack">Tags and categories in Hydejack</a></li>
+      <li><a href="#adding-a-new-category-or-tag" id="markdown-toc-adding-a-new-category-or-tag">Adding a new category or tag</a></li>
+    </ul>
+  </li>
+  <li><a href="#adding-a-page" id="markdown-toc-adding-a-page">Adding a page</a></li>
+  <li><a href="#adding-an-entry-to-the-sidebar" id="markdown-toc-adding-an-entry-to-the-sidebar">Adding an entry to the sidebar</a></li>
+  <li><a href="#adding-an-about-page" id="markdown-toc-adding-an-about-page">Adding an about page</a></li>
+  <li><a href="#adding-a-welcome-page" id="markdown-toc-adding-a-welcome-page">Adding a welcome page*</a></li>
+  <li><a href="#adding-a-project" id="markdown-toc-adding-a-project">Adding a project*</a></li>
+  <li><a href="#adding-a-resume" id="markdown-toc-adding-a-resume">Adding a resume*</a></li>
+</ul>
+
+<h2 id="adding-a-category-or-tag">Adding a category or tag</h2>
+<p>Hydejack allows you to use the <code class="highlighter-rouge">list</code> layout to show all posts of a particular tag or category.</p>
+
+<h3 id="tags-and-categories-in-jekyll">Tags and categories in Jekyll</h3>
+<p>Posts in Jekyll can belong to one or more categories, as well as one or more tags. They are defined in a post’s front matter:</p>
+
+<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span>     <span class="s">post</span>
+<span class="s">title</span><span class="pi">:</span>      <span class="s">Welcome to Jekyll</span>
+<span class="s">categories</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">jekyll</span><span class="pi">,</span> <span class="nv">update</span><span class="pi">]</span>
+<span class="s">tags</span><span class="pi">:</span>       <span class="pi">[</span><span class="nv">jekyll</span><span class="pi">,</span> <span class="nv">update</span><span class="pi">]</span>
+<span class="nn">---</span>
+</code></pre>
+</div>
+
+<p>Posts can also be assigned to a category based on their position within a folder structure, e.g.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>├── jekyll
+│   └── update
+│       └── _posts
+│           └── 2017-04-07-welcome-to-jekyll.markdown
+</code></pre>
+</div>
+
+<p>would place <code class="highlighter-rouge">welcome-to-jekyll</code> in the categories <code class="highlighter-rouge">jekyll</code> and <code class="highlighter-rouge">update</code>.
+Whether you use this method or not, categories will always be part of a posts URL, while tags will not, e.g.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Categories</td>
+      <td><code class="highlighter-rouge">/jekyll/update/2017/04/07/welcome-to-jekyll/</code></td>
+    </tr>
+    <tr>
+      <td>Tags</td>
+      <td><code class="highlighter-rouge">/2017/04/07/welcome-to-jekyll/</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>As far as Jekyll is concerned, these are the only differences.</p>
+
+<h3 id="tags-and-categories-in-hydejack">Tags and categories in Hydejack</h3>
+<p>Categories and tags are displayed by Hydejack below the title, after the date. Categories are displayed with the preposition “in”, while tags are displayed with the preposition “on”, e.g.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Categories</td>
+      <td>Welcome to Jekyll¬ 04/07/17 <strong>in</strong> Jekyll / Update</td>
+    </tr>
+    <tr>
+      <td>Tags</td>
+      <td>Welcome to Jekyll¬ 04/07/17 <strong>on</strong> Jekyll, Update</td>
+    </tr>
+    <tr>
+      <td>Both</td>
+      <td>Welcome to Jekyll¬ 04/07/17 <strong>in</strong> Jekyll / Update <strong>on</strong> Jekyll, Update</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="adding-a-new-category-or-tag">Adding a new category or tag</h3>
+<p>Be default, categories and tags are rendered as plain text. Further steps are necessary if you want them to link to a page that contains a list of all posts that belong to that category or tag.</p>
+
+<p>For each “featured” category or tag, a file called <code class="highlighter-rouge">&lt;categoryname&gt;.md</code> or <code class="highlighter-rouge">&lt;tagname&gt;.md</code> has to be created in <code class="highlighter-rouge">_featured_tags</code> or <code class="highlighter-rouge">_featured_categories</code>, respectively.
+Each file in these folders is part of a <a href="https://jekyllrb.com/docs/collections/">Jekyll Collection</a>.</p>
+
+<!-- In order for the category or tag to render its own page, it needs to have the `list` layout.
+Like posts, featured tags and categories may have a `description`.
+A tag's or category's `image` and `color` will be used as fallback for all pages that belong to that category or tag.
+It is recommended that the `slug` is set manually (normally it is derived from the title) because it must match the names used on a post's front matter. -->
+
+<p>Essential properties are set in the files front matter:</p>
+
+<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">list</span>
+<span class="s">title</span><span class="pi">:</span>  <span class="s">Hyde</span>
+<span class="s">slug</span><span class="pi">:</span>   <span class="s">hyde</span>
+<span class="s">description</span><span class="pi">:</span> <span class="pi">&gt;</span>
+  <span class="no">Hyde is a brazen two-column Jekyll](http://jekyllrb.com) theme</span>
+  <span class="no">that pairs a prominent sidebar with uncomplicated content.</span>
+  <span class="no">It's based on [Poole](http://getpoole.com), the Jekyll butler.</span>
+<span class="s">image</span><span class="pi">:</span>  <span class="s1">'</span><span class="s">data:image/gif;base64,R0lGODlhAQABAPAAACAgIP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='</span>
+<span class="s">color</span><span class="pi">:</span>  <span class="s1">'</span><span class="s">#268bd2'</span>
+<span class="s">menu</span><span class="pi">:</span>   <span class="s">true</span>
+<span class="nn">---</span>
+</code></pre>
+</div>
+
+<dl>
+  <dt><code class="highlighter-rouge">layout</code></dt>
+  <dd>Must be <code class="highlighter-rouge">list</code></dd>
+  <dt><code class="highlighter-rouge">title</code></dt>
+  <dd>Used as title of the page, as well as name of the category or tag as part of the line below a blog post’s title.
+Can be different from the name of the tag or category, as long as <code class="highlighter-rouge">slug</code> is identical to the name.</dd>
+  <dt><code class="highlighter-rouge">slug</code></dt>
+  <dd>Must be identical to the key used in the blog’s front matter, i.e. if you use <code class="highlighter-rouge">categories: [jekyll]</code> or <code class="highlighter-rouge">tags:       [jekyll]</code>, the <code class="highlighter-rouge">slug</code> must be <code class="highlighter-rouge">jekyll</code>. Normally the slug is derived from the title, but since it is used to find all posts that belong to a certain tag or category, it is recommended that you set it explicitly.</dd>
+  <dt><code class="highlighter-rouge">description</code></dt>
+  <dd>A medium-length description, used on the tag or category’s detail page as meta description and shown in a message box below the title.</dd>
+  <dt><code class="highlighter-rouge">image</code></dt>
+  <dd>Will be used as fallback for all pages that belong to that category or tag.</dd>
+  <dt><code class="highlighter-rouge">color</code></dt>
+  <dd>Will be used as fallback for all pages that belong to that category or tag.</dd>
+  <dt><code class="highlighter-rouge">menu</code></dt>
+  <dd>Set to to <code class="highlighter-rouge">true</code> if you want the category or tag to be linked in the sidebar. For more information, see
+<a href="#adding-an-entry-to-the-sidebar">Adding an entry to the sidebar</a>.</dd>
+</dl>
+
+<p>Once the file is created, the page can be found at <code class="highlighter-rouge">/category/&lt;categoryname&gt;</code> or <code class="highlighter-rouge">/tag/&lt;tagname&gt;</code>.</p>
+
+<h2 id="adding-a-page">Adding a page</h2>
+<p>You can add generic pages that support markdown content but aren’t blog posts.
+For example, this documentation is written in markdown, consisting of several generic pages.</p>
+
+<p>To create a page, create a new markdown file and put <code class="highlighter-rouge">layout: page</code> in a front matter</p>
+
+<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">page</span>
+<span class="s">title</span><span class="pi">:</span>  <span class="s">Documentation</span>
+<span class="nn">---</span>
+</code></pre>
+</div>
+
+<p>Now you can add content as you would in a blog post.</p>
+
+<h2 id="adding-an-entry-to-the-sidebar">Adding an entry to the sidebar</h2>
+<p>Hydejack’s sidebar can add links to any Jekyll page. In order for a page to appear in the sidebar, it needs to have a truthy <code class="highlighter-rouge">menu</code> value defined in its front matter. The page also needs to have a <code class="highlighter-rouge">title</code>, otherwise the entry in the sidebar will be blank.</p>
+
+<p>If you want the link to appear at a particular position, you can set a numeric value to the <code class="highlighter-rouge">order</code> key. However, the page is not guaranteed to appear in the 5th position if you set a value of <code class="highlighter-rouge">5</code>, since it will only use the number to sort the pages. The position of a page also depends on the <code class="highlighter-rouge">order</code> of other pages in the sidebar.</p>
+
+<p>E.g., this page’s front matter is</p>
+
+<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">page</span>
+<span class="s">title</span><span class="pi">:</span>  <span class="s">Documentation</span>
+<span class="s">menu</span><span class="pi">:</span>   <span class="s">true</span>
+<span class="s">order</span><span class="pi">:</span>  <span class="s">5</span>
+<span class="nn">---</span>
+</code></pre>
+</div>
+
+<h2 id="adding-an-about-page">Adding an about page</h2>
+<p>About pages are such a frequent use case that Hydejack has a special layout for it.
+However, it’s only a slight modification of the <code class="highlighter-rouge">page</code> layout.</p>
+
+<p>The main difference is that it will display an author’s <code class="highlighter-rouge">about</code> text and <code class="highlighter-rouge">picture</code> above the regular content.
+To create an about page, make sure <code class="highlighter-rouge">layout</code> is set to <code class="highlighter-rouge">about</code>, and that the <code class="highlighter-rouge">author</code> key is set to an author defined in <code class="highlighter-rouge">_data/authors.yml</code>. For more on authors, see <a href="/hydejack/docs/6.0.0-beta2/configuration/#adding-an-author">Adding an author</a>.</p>
+
+<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">about</span>
+<span class="s">title</span><span class="pi">:</span>  <span class="s">About</span>
+<span class="s">author</span><span class="pi">:</span> <span class="s">qwtel</span>
+<span class="nn">---</span>
+</code></pre>
+</div>
+
+<h2 id="adding-a-welcome-page">Adding a welcome page*</h2>
+<p>If you bought the “PRO” version of Hydejack you have access to the <code class="highlighter-rouge">welcome</code> layout.
+It is intended to showcase your projects and blog posts in a compact way.
+Technically, it is a modified version of the <code class="highlighter-rouge">about</code> layout, so it will also show author information at the top.</p>
+
+<p>You can create a welcome page by creating a new markdown file and setting the layout to <code class="highlighter-rouge">welcome</code> in the front matter.</p>
+
+<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">welcome</span>
+<span class="s">title</span><span class="pi">:</span> <span class="s">Welcome</span>
+<span class="s">author</span><span class="pi">:</span> <span class="s">qwtel</span>
+<span class="nn">---</span>
+</code></pre>
+</div>
+
+<p class="message"><strong>NOTE</strong>: If you would like the welcome page to be at the site’s root, you’d  have to name the file <code class="highlighter-rouge">index.md</code>. Additionally, you should move the blog layout (<code class="highlighter-rouge">index.html</code>) to a subdirectory like <code class="highlighter-rouge">blog</code> or <code class="highlighter-rouge">posts</code>. See <a href="/hydejack/docs/6.0.0-beta2/configuration/#choosing-a-blog-layout">Choosing a blog layout</a></p>
+
+<p>Without further configuration, the welcome page will show the two most recent projects and five most recent blog posts.
+However, the welcome layout supports selecting specific projects and posts in the front matter.</p>
+
+<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">welcome</span>
+<span class="s">title</span><span class="pi">:</span> <span class="s">Welcome</span>
+<span class="s">selected_projects</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">/projects/hydejack-v5</span>
+  <span class="pi">-</span> <span class="s">/projects/hyde-v2</span>
+<span class="s">selected_posts</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">/2017/03/17/javascripten</span>
+  <span class="pi">-</span> <span class="s">/2016/09/17/the-fast-one</span>
+  <span class="pi">-</span> <span class="s">/2016/08/30/social-media-impocalypse</span>
+<span class="s">more_projects</span><span class="pi">:</span> <span class="s">/projects/</span>
+<span class="s">more_posts</span><span class="pi">:</span> <span class="s">/posts/</span>
+<span class="nn">---</span>
+</code></pre>
+</div>
+
+<dl>
+  <dt><code class="highlighter-rouge">layout</code></dt>
+  <dd>Must be <code class="highlighter-rouge">welcome</code>.</dd>
+  <dt><code class="highlighter-rouge">selected_projects</code></dt>
+  <dd>A list of project ids that are displayed below the author’s about text and the content of the page.
+A project’s id is its path with a leading <code class="highlighter-rouge">/</code> and no file extension at the end.
+If no ids are provided, the two most recent projects will be used.</dd>
+  <dt><code class="highlighter-rouge">selected_projects</code></dt>
+  <dd>A list of blog post ids that are featured on the welcome page.
+A posts’s id is its path with a leading <code class="highlighter-rouge">/</code> and no file extension at the end.
+If no ids are provided, the five most recent posts will be used.</dd>
+  <dt><code class="highlighter-rouge">more_projects</code></dt>
+  <dd>URL. When provided, a “More Projects” link will be shown below the projects.</dd>
+  <dt><code class="highlighter-rouge">more_posts</code></dt>
+  <dd>URL. When provided, a “More Posts” link will be shown below the posts.</dd>
+</dl>
+
+<h2 id="adding-a-project">Adding a project*</h2>
+<p>Projects are organized using Jekyll’s <a href="https://jekyllrb.com/docs/collections/">Collection feature</a>.
+Each project is represented by a file in the <code class="highlighter-rouge">_projects</code> directory.
+A projects meta information is defined in the files front matter.
+Additionally, you can add markdown content. A project’s front matter may look like:</p>
+
+<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">project</span>
+<span class="s">title</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Hyde</span><span class="nv"> </span><span class="s">v2'</span>
+<span class="s">date</span><span class="pi">:</span> <span class="s">2 Jan 2014</span>
+<span class="s">screenshot</span><span class="pi">:</span>
+  <span class="s">src</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/hydejack/assets/img/projects/hyde-v2@0,25x.png'</span>
+  <span class="s">srcset</span><span class="pi">:</span>
+    <span class="s">2870w</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/hydejack/assets/img/projects/hyde-v2.png'</span>
+    <span class="s">1435w</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/hydejack/assets/img/projects/hyde-v2@0,5x.png'</span>
+    <span class="s">718w</span><span class="pi">:</span>  <span class="s1">'</span><span class="s">/hydejack/assets/img/projects/hyde-v2@0,25x.png'</span>
+<span class="s">link</span><span class="pi">:</span> <span class="s">http://hyde.getpoole.com</span>
+<span class="s">source</span><span class="pi">:</span> <span class="s">https://github.com/poole/hyde</span>
+<span class="s">caption</span><span class="pi">:</span> <span class="s">Hyde is a brazen two-column Jekyll theme.</span>
+<span class="s">description</span><span class="pi">:</span> <span class="pi">&gt;</span>
+  <span class="no">Hyde is a brazen two-column Jekyll](http://jekyllrb.com) theme</span>
+  <span class="no">that pairs a prominent sidebar with uncomplicated content.</span>
+  <span class="no">It's based on [Poole](http://getpoole.com), the Jekyll butler.</span>
+<span class="s">author</span><span class="pi">:</span> <span class="s">mdo</span>
+<span class="nn">---</span>
+</code></pre>
+</div>
+
+<dl>
+  <dt><code class="highlighter-rouge">layout</code></dt>
+  <dd>Must be set to <code class="highlighter-rouge">project</code></dd>
+  <dt><code class="highlighter-rouge">date</code></dt>
+  <dd>Providing a year is the minimum requirement. Used to sort the projects.</dd>
+  <dt><code class="highlighter-rouge">screenshot</code></dt>
+  <dd>A 16:9 screenshot of the project. You can pass a URL to an image, but it is recommended that you provide an entire <code class="highlighter-rouge">srcset</code> (see above). Hydejack will show the screenshot in various sizes, depending on the screen width, so that no specific size will fit all. Instead it is recommended that you use a <a href="https://en.wikipedia.org/wiki/Mipmap">mipmap</a>-like approach, providing the image in multiple sizes, each image half the width of the previous one. The <code class="highlighter-rouge">src</code> key is a fallback image for browsers that don’t support the <code class="highlighter-rouge">srcset</code> attribute. The keys of the <code class="highlighter-rouge">srcset</code> hash will be used as descriptors.
+For more information on <code class="highlighter-rouge">srcset</code>, see the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset">documentation at MDN</a>, or <a href="https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/">this article from CSS-Tricks</a>.</dd>
+  <dt><code class="highlighter-rouge">link</code></dt>
+  <dd>A URL pointing to a live version of the project.</dd>
+  <dt><code class="highlighter-rouge">source</code></dt>
+  <dd>For open source projects, an URL pointing to a repository.</dd>
+  <dt><code class="highlighter-rouge">caption</code></dt>
+  <dd>A short description, shown as part of each “project card” in the <code class="highlighter-rouge">projects</code> layout.</dd>
+  <dt><code class="highlighter-rouge">description</code></dt>
+  <dd>A medium-length description, used on the project’s detail page as meta description and shown as message box below he screenshot.</dd>
+  <dt><code class="highlighter-rouge">author</code></dt>
+  <dd>Shown below the project, similar to posts.</dd>
+</dl>
+
+<h2 id="adding-a-resume">Adding a resume*</h2>
+<p>Hydejack’s “PRO” version features a generalized resume layout.
+It generates the resume page from a valid <a href="https://jsonresume.org/">JSON Resume</a>, which is good news if you already have a JSON resume. Otherwise, there are various ways of obtaining one:</p>
+
+<ul>
+  <li>You can use the visual <a href="http://registry.jsonresume.org/">JSON Resume Editor</a>.</li>
+  <li>If you have a LinkedIn profile, you can try <a href="https://jmperezperez.com/linkedin-to-json-resume/">LinkedIn to Json Résumé</a>.</li>
+  <li>You can edit the <a href="https://github.com/qwtel/hydejack/blob/v6/_data/resume.json">example <code class="highlighter-rouge">resume.json</code></a> in the <code class="highlighter-rouge">_data</code> directly. It contains example entries for each type of entry.</li>
+</ul>
+
+<p>If you prefer editing YAML files, there is an <a href="https://github.com/qwtel/hydejack/blob/v6/_data/_resume.yml">example <code class="highlighter-rouge">_resume.yml</code></a> file in <code class="highlighter-rouge">_data</code>.
+In order to use it, delete <code class="highlighter-rouge">resume.json</code>, and rename <code class="highlighter-rouge">_resume.yml</code> to <code class="highlighter-rouge">resume.yml</code>.</p>
+
+<p>Once you have a JSON Resume, place it into <code class="highlighter-rouge">_data</code>. To render the resume page, create a new markdown file and set the layout to <code class="highlighter-rouge">resume</code> in the front matter.</p>
+
+<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">resume</span>
+<span class="s">title</span><span class="pi">:</span> <span class="s">Resume</span>
+<span class="nn">---</span>
+</code></pre>
+</div>
+
+<p class="message"><strong>NOTE</strong>: You can download the final <a href="/hydejack/assets/resume.json" class="no-push-state" download="resume.json"><code class="highlighter-rouge">resume.json</code></a> (minified) from the assets folder. When running locally, you can also find it at <code class="highlighter-rouge">_site/assets/resume.json</code>.</p>
+
+<hr />
+
+<p class="faded heading">Continue with <a href="/hydejack/docs/6.0.0-beta2/writing/" data-flip="title">Writing</a> »</p>
+
+
+</article>
+
+
+    
+
+    <footer>
+  <hr/>
+  
+    <p>* Layout not part of the free version</p>
+
+  
+  <p>
+    <code>Powered by <a href="https://qwtel.com/hydejack/">Hydejack</a> v<span id="_version">6.2.0</span></code>
+  </p>
+</footer>
+
+  </main>
+  <div id="_yDrawer">
+  <div id="_sidebar" class="sidebar">
+    <div class="sidebar-bg" style="background-color:#8e5c75;background-image:url(/hydejack/assets/img/doc.jpg)"></div>
+    <header class="sidebar-sticky" role="banner">
+      <div class="sidebar-about">
+        <h1><a id="_title" href="/hydejack/">Hydejack</a></h1>
+        <p>A pretentious two-column <a href="http://jekyllrb.com/">Jekyll</a> theme, stolen by <a href="https://twitter.com/qwtel"><code rel="me" class="highlighter-rouge">@qwtel</code></a> from <a href="http://hyde.getpoole.com">Hyde</a>. You could say it was.. <a href="http://media3.giphy.com/media/makedRIckZBW8/giphy.gif">hydejacked</a>.</p>
+
+      </div>
+
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+
+  
+
+  
+
+  
+    <li>
+      <a class="sidebar-nav-item" href="/hydejack/blog/">Blog</a>
+    </li>
+  
+    <li>
+      <a class="sidebar-nav-item" href="/hydejack/projects/">Projects*</a>
+    </li>
+  
+    <li>
+      <a class="sidebar-nav-item" href="/hydejack/resume/">Resume*</a>
+    </li>
+  
+    <li>
+      <a class="sidebar-nav-item" href="/hydejack/download/">Download</a>
+    </li>
+  
+</ul>
+
+      </nav>
+
+      
+      
+        <div class="sidebar-social">
+          <span class="sr-only">Social:</span>
+<ul>
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://twitter.com/qwtel">
+    <span class="icon-twitter" title="Twitter"></span>
+    <span class="sr-only">Twitter</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://www.youtube.com/channel/UCu0PYX_kVANdmgIZ4bw6_kA">
+    <span class="icon-youtube" title="YouTube"></span>
+    <span class="sr-only">YouTube</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/qwtel">
+    <span class="icon-github" title="GitHub"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+</ul>
+
+        </div>
+      
+    </header>
+  </div>
+</div>
+
+</div>
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+
+
+
+<!--[if gt IE 8]><!---->
+
+<script>
+  WebFontConfig = {
+    
+    google: {
+      families: 'Roboto+Slab:700|Noto+Serif:400,400i,700,700i'.split('|')
+    },
+    
+
+    custom: {
+      families: ['icomoon'],
+      urls: ['/hydejack/assets/icomoon/style.css']
+    }
+  };
+  loadJSDeferred('https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
+</script>
+
+
+
+<!--[if gt IE 9]><!---->
+
+<script>loadJSDeferred('/hydejack/assets/js/hydejack.js?v=6.2.0');</script>
+<!--<![endif]-->
+
+
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-84025722-2', 'auto');
+  ga('send', 'pageview');
+  loadJSDeferred('https://www.google-analytics.com/analytics.js');
+</script>
+
+<!--<![endif]-->
+
+
+
+
+</body>
+
+</html>
