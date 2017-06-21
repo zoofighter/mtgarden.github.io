@@ -1,8 +1,169 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://qwtel.com/hydejack/feed.xml" rel="self" type="application/atom+xml" /><link href="https://qwtel.com/hydejack/" rel="alternate" type="text/html" /><updated>2017-06-06T13:46:16+02:00</updated><id>https://qwtel.com/hydejack/</id><title type="html">Hydejack</title><subtitle>A pretentious two-column [Jekyll](http://jekyllrb.com/) theme, stolen by [`@qwtel`{:rel=&quot;me&quot;}](https://twitter.com/qwtel) from [Hyde](http://hyde.getpoole.com). You could say it was.. [hydejacked](http://media3.giphy.com/media/makedRIckZBW8/giphy.gif).
-</subtitle><author><name>Florian Klampfer</name><email>f.klampfer@gmail.com</email></author><entry><title type="html">v6: JavaScripten</title><link href="https://qwtel.com/hydejack/2017/05/03/javascripten/" rel="alternate" type="text/html" title="v6: JavaScripten" /><published>2017-05-03T00:00:00+02:00</published><updated>2017-05-03T00:00:00+02:00</updated><id>https://qwtel.com/hydejack/2017/05/03/javascripten</id><content type="html" xml:base="https://qwtel.com/hydejack/2017/05/03/javascripten/">&lt;p&gt;Hydejack has always featured a JavaScript-heavy sidebar, but other than that, JS has been used sparingly. This changes with this release, which adds a ton of (optional) code that changes the feel of the theme dramatically.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://qwtel.com/hydejack/feed.xml" rel="self" type="application/atom+xml" /><link href="https://qwtel.com/hydejack/" rel="alternate" type="text/html" /><updated>2017-06-21T13:12:52+02:00</updated><id>https://qwtel.com/hydejack/</id><title type="html">Hydejack</title><subtitle>A pretentious two-column [Jekyll](http://jekyllrb.com/) theme, stolen by [`@qwtel`{:rel=&quot;me&quot;}](https://twitter.com/qwtel) from [Hyde](http://hyde.getpoole.com). You could say it was.. [hydejacked](http://media3.giphy.com/media/makedRIckZBW8/giphy.gif).
+</subtitle><author><name>Florian Klampfer</name><email>mail@qwtel.com</email></author><entry><title type="html">Related Projects and Data Tables (v6.4)</title><link href="https://qwtel.com/hydejack/2017/06/21/related-projects-and-data-tables/" rel="alternate" type="text/html" title="Related Projects and Data Tables (v6.4)" /><published>2017-06-21T00:00:00+02:00</published><updated>2017-06-21T00:00:00+02:00</updated><id>https://qwtel.com/hydejack/2017/06/21/related-projects-and-data-tables</id><content type="html" xml:base="https://qwtel.com/hydejack/2017/06/21/related-projects-and-data-tables/">&lt;p&gt;In this release I’ve added a “Other Projects” section to the bottom of each project page,
+making it easier for users to navigate through your collection and discover other projects.
+Also, it’s now possible to display larger (data-) tables that were previously cut off (especially on mobile devices).&lt;/p&gt;
+
+&lt;p&gt;For more on how to add tables, see the new section in &lt;a href=&quot;/hydejack/docs/6.4.0/writing/&quot;&gt;docs/writing&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Smaller changes include a reduced usage of horizontal lines and a more “semantic” use of &lt;code class=&quot;highlighter-rouge&quot;&gt;hr&lt;/code&gt; elements.
+Specifically, the semantics of the resume layout have been improved.
+This is best visualized when viewing the page with a text browser like &lt;code class=&quot;highlighter-rouge&quot;&gt;w3m&lt;/code&gt;.
+For example, before 6.4 the skills section looked like&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Skills
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Web Development | Level: Master
+
+Keywords:
+
+  • HTML
+  • CSS
+  • Javascript
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Compression | Level: Master
+
+Keywords:
+
+  • Mpeg
+  • MP4
+  • GIF
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;(lots of &lt;code class=&quot;highlighter-rouge&quot;&gt;hr&lt;/code&gt;s, skill level as part of the headline 😕)&lt;/p&gt;
+
+&lt;p&gt;Now it looks like&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Skills
+
+Web Development
+    Level: Master
+    Keywords:
+      □ HTML
+      □ CSS
+      □ Javascript
+Compression
+    Level: Master
+    Keywords:
+      □ Mpeg
+      □ MP4
+      □ GIF
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;(using a &lt;code class=&quot;highlighter-rouge&quot;&gt;dl&lt;/code&gt;, so that &lt;code class=&quot;highlighter-rouge&quot;&gt;Level -&amp;gt; &quot;Master&quot;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Keywords -&amp;gt; ul&lt;/code&gt;, …)&lt;/p&gt;
+
+&lt;p&gt;There’s many more minor changes and fixes that you can read below.&lt;/p&gt;
+
+&lt;h2 id=&quot;patch-notes&quot;&gt;Patch Notes&lt;/h2&gt;
+&lt;h3 id=&quot;minor&quot;&gt;Minor&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Added “Other Projects” section to the bottom of the project layout (similar to “Related Posts”)&lt;/li&gt;
+  &lt;li&gt;Added CSS classes that make viewing larger (data-) tables possible&lt;/li&gt;
+  &lt;li&gt;Added section on tables to &lt;a href=&quot;/hydejack/docs/6.4.0/writing/&quot;&gt;docs/writing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Reduced use of &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;hr/&amp;gt;&lt;/code&gt; elements, using CSS borders instead.&lt;/li&gt;
+  &lt;li&gt;Improved semantic HTML of resume&lt;/li&gt;
+  &lt;li&gt;Follow favicon best practices and include example icons&lt;/li&gt;
+  &lt;li&gt;Added &lt;code class=&quot;highlighter-rouge&quot;&gt;no_google_fonts&lt;/code&gt; option&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reduced number of horizontal lines, making many layouts feel less “cluttered” (esp. &lt;code class=&quot;highlighter-rouge&quot;&gt;blog&lt;/code&gt; layout)&lt;/li&gt;
+  &lt;li&gt;Made link hover styles consistent across the board&lt;/li&gt;
+  &lt;li&gt;Visually separated &lt;code class=&quot;highlighter-rouge&quot;&gt;thead&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;tbody&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;tfoot&lt;/code&gt; within tables.&lt;/li&gt;
+  &lt;li&gt;Changed RSS and email icons&lt;/li&gt;
+  &lt;li&gt;Removed top margin for consecutive headings, e.g. when using &lt;code class=&quot;highlighter-rouge&quot;&gt;h3&lt;/code&gt; immediately after &lt;code class=&quot;highlighter-rouge&quot;&gt;h2&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;fixes&quot;&gt;Fixes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed bug that caused inline math to be moved to the end of a paragraph when dynamically loading a page.&lt;/li&gt;
+  &lt;li&gt;Fixed bug that caused layout to break in IE11.&lt;/li&gt;
+  &lt;li&gt;Fixed bug that caused the project animation to “jump” when using long project titles.&lt;/li&gt;
+  &lt;li&gt;No more empty attributes on &lt;code class=&quot;highlighter-rouge&quot;&gt;img&lt;/code&gt; tags.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Florian Klampfer</name><email>mail@qwtel.com</email></author><category term="hydejack" /><summary type="html">In this release I’ve added a “Other Projects” section to the bottom of each project page, making it easier for users to navigate through your collection and discover other projects. Also, it’s now possible to display larger (data-) tables that were previously cut off (especially on mobile devices).</summary></entry><entry><title type="html">Third Party Scripts (v6.3)</title><link href="https://qwtel.com/hydejack/2017/06/06/third-party-scripts/" rel="alternate" type="text/html" title="Third Party Scripts (v6.3)" /><published>2017-06-06T00:00:00+02:00</published><updated>2017-06-06T00:00:00+02:00</updated><id>https://qwtel.com/hydejack/2017/06/06/third-party-scripts</id><content type="html" xml:base="https://qwtel.com/hydejack/2017/06/06/third-party-scripts/">&lt;p&gt;This release makes including third party plugins easier.
+Until now, the push state approach to loading new pages has been interfering with embedded &lt;code class=&quot;highlighter-rouge&quot;&gt;script&lt;/code&gt; tags.
+This version changes this by simulating the sequential loading of script tags on a fresh page load.&lt;/p&gt;
+
+&lt;p&gt;This approach should work in a majority of cases, but can still cause problems with scripts that can’t be added more than once per page.
+If an issue can’t be resolved, there’s now the option to disable push state by setting &lt;code class=&quot;highlighter-rouge&quot;&gt;disable_push_state: true&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;config.yml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-happening&quot;&gt;What’s happening?&lt;/h2&gt;
+&lt;p&gt;The problem is as follows:
+When the browser encounters a &lt;code class=&quot;highlighter-rouge&quot;&gt;script&lt;/code&gt; tag while parsing a HTML page it will stop (possibly to make a request to fetch
+an external script) and then execute the code before continuing parsing the page
+(it’s easy to how this can make your page really slow, but that’s a different topic).&lt;/p&gt;
+
+&lt;p&gt;In any case, due of this behavior you can do things like include jQuery,
+then run code that depends on jQuery in the next script tag:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;.../jquery.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#tabs'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;someJQueryFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// works&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I’d consider this an anti-pattern for the reason mentioned above,
+but it remains common and has the advantage of being easy to understand.&lt;/p&gt;
+
+&lt;p&gt;However, things break when Hydejack dynamically inserts new content into the page.
+It works fine for standard markdown content like &lt;code class=&quot;highlighter-rouge&quot;&gt;p&lt;/code&gt; tags,
+but when inserting &lt;code class=&quot;highlighter-rouge&quot;&gt;script&lt;/code&gt; tags the browser will execute them immediately and in parallel,
+because in most cases this is what you’d want.
+However, this means that &lt;code class=&quot;highlighter-rouge&quot;&gt;$('#tabs').someJQueryFunction();&lt;/code&gt; will run while the HTTP request for jQuery is still
+in progress — and we get an error that &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt; isn’t defined, or similar.&lt;/p&gt;
+
+&lt;p&gt;From this description the solution should be obvious: Insert the &lt;code class=&quot;highlighter-rouge&quot;&gt;script&lt;/code&gt; tags one-by-one,
+to simulate how they would get executed if it was a fresh page request.
+In fact this is how Hydejack is now handling things (and thanks to rxjs’ &lt;code class=&quot;highlighter-rouge&quot;&gt;concatMap&lt;/code&gt; it was easy to implement),
+but unfortunately this is not a magic solution that can fix all problems:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Some scripts may throw when running on the same page twice&lt;/li&gt;
+  &lt;li&gt;Some scripts rely on the document’s &lt;code class=&quot;highlighter-rouge&quot;&gt;load&lt;/code&gt; event, which has fired long before the script was inserted&lt;/li&gt;
+  &lt;li&gt;unkown-unkowns&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But what will “magically” solve all third party script problems, is disabling dynamic page loading altogether,
+for which there’s now an option.
+To make this a slightly less bitter pill to swallow,
+there’s now a CSS-only “intro” animation that looks similar to the dynamic one.
+Maybe you won’t even notice the difference.&lt;/p&gt;
+
+&lt;h2 id=&quot;patch-notes&quot;&gt;Patch Notes&lt;/h2&gt;
+&lt;h3 id=&quot;minor&quot;&gt;Minor&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Support embedding &lt;code class=&quot;highlighter-rouge&quot;&gt;script&lt;/code&gt; tags in markdown content&lt;/li&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;disable_push_state&lt;/code&gt; option to &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;disable_drawer&lt;/code&gt; option to &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Rename syntax highlighting file to &lt;code class=&quot;highlighter-rouge&quot;&gt;syntax.scss&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Added &lt;a href=&quot;/hydejack/docs/6.4.0/scripts/&quot;&gt;chapter on third party scripts&lt;/a&gt; to documentation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Add subtle intro animation&lt;/li&gt;
+  &lt;li&gt;Rename “Check out X for more” to “See X for more” on welcome* page&lt;/li&gt;
+  &lt;li&gt;Replace “»” with “→” in “read more”-type of links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;fixes&quot;&gt;Fixes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fix default color in gem-based theme&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Florian Klampfer</name><email>mail@qwtel.com</email></author><category term="hydejack" /><summary type="html">This release makes including third party plugins easier. Until now, the push state approach to loading new pages has been interfering with embedded script tags. This version changes this by simulating the sequential loading of script tags on a fresh page load.</summary></entry><entry><title type="html">JavaScripten (v6)</title><link href="https://qwtel.com/hydejack/2017/05/03/javascripten/" rel="alternate" type="text/html" title="JavaScripten (v6)" /><published>2017-05-03T00:00:00+02:00</published><updated>2017-05-03T00:00:00+02:00</updated><id>https://qwtel.com/hydejack/2017/05/03/javascripten</id><content type="html" xml:base="https://qwtel.com/hydejack/2017/05/03/javascripten/">&lt;p&gt;Hydejack has always featured a JavaScript-heavy sidebar, but other than that, JS has been used sparingly.
+This changes with this release, which adds a ton of (optional) code that changes the feel of the theme dramatically.&lt;/p&gt;
 
 &lt;h2 id=&quot;major&quot;&gt;Major&lt;/h2&gt;
-&lt;p&gt;Pages are now loaded and swapped through JavaScript. This has a number of effects. First of all, it looks cool, but the animations aren’t just about aesthetics: They also help to hide the network time of fetching the next page, making the entire site feel faster. At the same time, the &lt;abbr title=&quot;Flash of Unstyled Content&quot;&gt;FOUC&lt;/abbr&gt; introduced in the last release will no longer occur (except on the initial page load).&lt;/p&gt;
+&lt;p&gt;Pages are now loaded and swapped through JavaScript. This has a number of effects.
+First of all, it looks cool, but the animations aren’t just about aesthetics:
+They also help to hide the network time of fetching the next page, making the entire site feel faster.
+At the same time, the &lt;abbr title=&quot;Flash of Unstyled Content&quot;&gt;FOUC&lt;/abbr&gt; introduced in the last release will no longer occur (except on the initial page load).&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Most JS is now unified in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_js&lt;/code&gt; directory and written in ES2016.&lt;/li&gt;
@@ -19,14 +180,17 @@
   &lt;li&gt;Added &lt;code class=&quot;highlighter-rouge&quot;&gt;redirect&lt;/code&gt; layout&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;See the &lt;a href=&quot;/hydejack/docs/6.3.0/migration/&quot;&gt;the migration guide&lt;/a&gt; for instructions on how to upgrade.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&quot;/hydejack/docs/6.4.0/migration/&quot;&gt;the migration guide&lt;/a&gt; for instructions on how to upgrade.&lt;/p&gt;
 
 &lt;h2 id=&quot;minor&quot;&gt;Minor&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;The “accent” font (heading font) is now used for all headings. This gives the theme a “bolder” look and was necessary for the animation: link =&amp;gt; heading.&lt;/li&gt;
+  &lt;li&gt;The “accent” font (heading font) is now used for all headings.
+This gives the theme a “bolder” look and was necessary for the animation: link =&amp;gt; heading.&lt;/li&gt;
   &lt;li&gt;Changed default text font from “PT Serif” to “Noto Serif”.&lt;/li&gt;
-  &lt;li&gt;Added &lt;a href=&quot;/hydejack/docs/6.3.0/writing/&quot;&gt;CSS classes&lt;/a&gt; for styling markdown content.&lt;/li&gt;
-  &lt;li&gt;Links have a new style. They now always display an underline to make the choice of the link color less critical (darker colors were hard to distinguish from regular text).&lt;/li&gt;
+  &lt;li&gt;Added &lt;a href=&quot;/hydejack/docs/6.4.0/writing/&quot;&gt;CSS classes&lt;/a&gt; for styling markdown content.&lt;/li&gt;
+  &lt;li&gt;Links have a new style.
+They now always display an underline to make the choice of the link color less critical (darker colors were hard to
+distinguish from regular text).&lt;/li&gt;
   &lt;li&gt;Made social media icons larger and easier to tap.&lt;/li&gt;
   &lt;li&gt;Social media icons are now also part of the “about” sections of a post.&lt;/li&gt;
   &lt;li&gt;Added support for a copyright notice at the bottom. Can be set via the config variable &lt;code class=&quot;highlighter-rouge&quot;&gt;copyright&lt;/code&gt;.&lt;/li&gt;
@@ -50,19 +214,21 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/qwtel/hydejack/releases/tag/v6.3.0&quot;&gt;Get &lt;em&gt;JavaScripten&lt;/em&gt; on GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name>Florian Klampfer</name><email>f.klampfer@gmail.com</email></author><category term="hydejack" /><summary type="html">Hydejack has always featured a JavaScript-heavy sidebar, but other than that, JS has been used sparingly. This changes with this release, which adds a ton of (optional) code that changes the feel of the theme dramatically.</summary></entry><entry><title type="html">v5: The Fast One</title><link href="https://qwtel.com/hydejack/2016/09/17/the-fast-one/" rel="alternate" type="text/html" title="v5: The Fast One" /><published>2016-09-17T00:00:00+02:00</published><updated>2016-09-17T00:00:00+02:00</updated><id>https://qwtel.com/hydejack/2016/09/17/the-fast-one</id><content type="html" xml:base="https://qwtel.com/hydejack/2016/09/17/the-fast-one/">&lt;p class=&quot;message&quot;&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is outdated and only included for legacy reasons.
-See the &lt;a href=&quot;/hydejack/docs/6.3.0/&quot; class=&quot;heading&quot; data-flip=&quot;title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/qwtel/hydejack/releases/tag/v6.4.0&quot;&gt;Get &lt;em&gt;JavaScripten&lt;/em&gt; on GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name>Florian Klampfer</name><email>mail@qwtel.com</email></author><category term="hydejack" /><summary type="html">Hydejack has always featured a JavaScript-heavy sidebar, but other than that, JS has been used sparingly. This changes with this release, which adds a ton of (optional) code that changes the feel of the theme dramatically.</summary></entry><entry><title type="html">The Fast One (v5)</title><link href="https://qwtel.com/hydejack/2016/09/17/the-fast-one/" rel="alternate" type="text/html" title="The Fast One (v5)" /><published>2016-09-17T00:00:00+02:00</published><updated>2016-09-17T00:00:00+02:00</updated><id>https://qwtel.com/hydejack/2016/09/17/the-fast-one</id><content type="html" xml:base="https://qwtel.com/hydejack/2016/09/17/the-fast-one/">&lt;p&gt;This major release increases page load speed dramatically.
+The page now scores roughly 90/100 on &lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fqwtel.com%2Fhydejack%2F&quot;&gt;Google’s PageSpeed Insights&lt;/a&gt; (up from ~50) and
+has a high score on similar tools.&lt;/p&gt;
 
-&lt;p&gt;This major release increases page load speed dramatically. The page now scores roughly 90/100 on &lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fqwtel.com%2Fhydejack%2F&quot;&gt;Google’s PageSpeed Insights&lt;/a&gt; (up from ~50) and has a high score on similar tools.&lt;/p&gt;
+&lt;p class=&quot;message&quot;&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is outdated and only included for legacy reasons.
+See the &lt;a href=&quot;/hydejack/docs/6.4.0/&quot; class=&quot;heading&quot; data-flip=&quot;title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
 
-&lt;!--more--&gt;
-
-&lt;p&gt;Most importantly, the critical rendering path is no longer blocked by loading styles or scripts, meaning the site becomes visible faster.&lt;/p&gt;
+&lt;p&gt;Most importantly, the critical rendering path is no longer blocked by loading styles or scripts,
+meaning the site becomes visible faster.&lt;/p&gt;
 
 &lt;p&gt;Page load speed matters to Google, but is also &lt;em&gt;very&lt;/em&gt; apparent to visitors with slow internet connections.&lt;/p&gt;
 
-&lt;p&gt;However, as a side effect of these optimizations, the site now has a visible &lt;a href=&quot;https://en.wikipedia.org/wiki/Flash_of_unstyled_content&quot;&gt;FOUC&lt;/a&gt;.
-Future versions might address this, but it is the currency in which loading speed is being payed for and can not be fully avoided.&lt;/p&gt;
+&lt;p&gt;However, as a side effect of these optimizations, the site now has a visible &lt;abbr title=&quot;Flash Of Unstyled Content&quot;&gt;FOUC&lt;/abbr&gt;.
+Future versions might address this,
+but it is the currency in which loading speed is being payed for and can not be fully avoided.&lt;/p&gt;
 
 &lt;h2 id=&quot;major&quot;&gt;Major&lt;/h2&gt;
 
@@ -84,14 +250,12 @@ Future versions might address this, but it is the currency in which loading spee
 
 &lt;h2 id=&quot;trivia&quot;&gt;Trivia&lt;/h2&gt;
 
-&lt;p&gt;Not strictly part of the release, but the images have been blurred to increase text readability and help with loading speed as well (burred images get compressed by JPG much better).&lt;/p&gt;
+&lt;p&gt;Not strictly part of the release, but the images have been blurred to increase text readability and
+help with loading speed as well (burred images get compressed by JPG much better).&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/qwtel/hydejack/releases/tag/v5.0.0&quot;&gt;Get &lt;em&gt;The Fast One&lt;/em&gt; on GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name>Florian Klampfer</name><email>f.klampfer@gmail.com</email></author><category term="hydejack" /><summary type="html">NOTE: This post is outdated and only included for legacy reasons. See the Documentation for up-to-date instructions. This major release increases page load speed dramatically. The page now scores roughly 90/100 on Google’s PageSpeed Insights (up from ~50) and has a high score on similar tools.</summary></entry><entry><title type="html">v4: Social Media Impocalypse</title><link href="https://qwtel.com/hydejack/2016/08/30/social-media-impocalypse/" rel="alternate" type="text/html" title="v4: Social Media Impocalypse" /><published>2016-08-30T00:00:00+02:00</published><updated>2016-08-30T00:00:00+02:00</updated><id>https://qwtel.com/hydejack/2016/08/30/social-media-impocalypse</id><content type="html" xml:base="https://qwtel.com/hydejack/2016/08/30/social-media-impocalypse/">&lt;p class=&quot;message&quot;&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is outdated and only included for legacy reasons.
-See the &lt;a href=&quot;/hydejack/docs/6.3.0/&quot; class=&quot;heading&quot; data-flip=&quot;title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
-
-&lt;h2 id=&quot;breaking&quot;&gt;Breaking&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/qwtel/hydejack/releases/tag/v5.0.0&quot;&gt;Get &lt;em&gt;The Fast One&lt;/em&gt; on GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name>Florian Klampfer</name><email>mail@qwtel.com</email></author><category term="hydejack" /><summary type="html">This major release increases page load speed dramatically. The page now scores roughly 90/100 on Google’s PageSpeed Insights (up from ~50) and has a high score on similar tools.</summary></entry><entry><title type="html">Social Media Impocalypse (v4)</title><link href="https://qwtel.com/hydejack/2016/08/30/social-media-impocalypse/" rel="alternate" type="text/html" title="Social Media Impocalypse (v4)" /><published>2016-08-30T00:00:00+02:00</published><updated>2016-08-30T00:00:00+02:00</updated><id>https://qwtel.com/hydejack/2016/08/30/social-media-impocalypse</id><content type="html" xml:base="https://qwtel.com/hydejack/2016/08/30/social-media-impocalypse/">&lt;h2 id=&quot;breaking&quot;&gt;Breaking&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Structure of &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; has changed
     &lt;ul&gt;
@@ -104,6 +268,9 @@ See the &lt;a href=&quot;/hydejack/docs/6.3.0/&quot; class=&quot;heading&quot; d
 &lt;/ul&gt;
 
 &lt;!--more--&gt;
+
+&lt;p class=&quot;message&quot;&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is outdated and only included for legacy reasons.
+See the &lt;a href=&quot;/hydejack/docs/6.4.0/&quot; class=&quot;heading&quot; data-flip=&quot;title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
 
 &lt;h2 id=&quot;new-features&quot;&gt;New features&lt;/h2&gt;
 &lt;ul&gt;
@@ -119,7 +286,8 @@ See the &lt;a href=&quot;/hydejack/docs/6.3.0/&quot; class=&quot;heading&quot; d
 
 &lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;Correctly set the meta description field using either the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; field or &lt;code class=&quot;highlighter-rouge&quot;&gt;post.excerpt&lt;/code&gt; as a fallback (used to contain the unmodified markdown).&lt;/li&gt;
+  &lt;li&gt;Correctly set the meta description field using either the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; field or &lt;code class=&quot;highlighter-rouge&quot;&gt;post.excerpt&lt;/code&gt; as a fallback (used
+to contain the unmodified markdown).&lt;/li&gt;
   &lt;li&gt;Fixed various URL bugs relating to &lt;code class=&quot;highlighter-rouge&quot;&gt;site.baseurl&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -130,10 +298,7 @@ See the &lt;a href=&quot;/hydejack/docs/6.3.0/&quot; class=&quot;heading&quot; d
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/qwtel/hydejack/releases/tag/v4.0.0&quot;&gt;Get &lt;em&gt;Social Media Impocalypse&lt;/em&gt; on GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name>Florian Klampfer</name><email>f.klampfer@gmail.com</email></author><category term="hydejack" /><summary type="html">NOTE: This post is outdated and only included for legacy reasons. See the Documentation for up-to-date instructions. Breaking Structure of _config.yml has changed Social media usernames are now located under author: social: &amp;lt;platform&amp;gt;: &amp;lt;username&amp;gt;. disqus is now a top-level entry (moved from author). Now has font, font_accent and google_fonts fields that are mandatory. Now defaults to the blog layout, old style is available via blog-by-tag layout, see archive.html.</summary></entry><entry><title type="html">Introducing Hydejack</title><link href="https://qwtel.com/hydejack/2016/03/08/introducing-hydejack/" rel="alternate" type="text/html" title="Introducing Hydejack" /><published>2016-03-08T00:00:00+01:00</published><updated>2016-03-08T00:00:00+01:00</updated><id>https://qwtel.com/hydejack/2016/03/08/introducing-hydejack</id><content type="html" xml:base="https://qwtel.com/hydejack/2016/03/08/introducing-hydejack/">&lt;p class=&quot;message&quot;&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is outdated and only included for legacy reasons.
-See the &lt;a href=&quot;/hydejack/docs/6.3.0/&quot; class=&quot;heading&quot; data-flip=&quot;title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
-
-&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/qwtel/hydejack/releases/tag/v4.0.0&quot;&gt;Get &lt;em&gt;Social Media Impocalypse&lt;/em&gt; on GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name>Florian Klampfer</name><email>mail@qwtel.com</email></author><category term="hydejack" /><summary type="html">Breaking Structure of _config.yml has changed Social media usernames are now located under author: social: &amp;lt;platform&amp;gt;: &amp;lt;username&amp;gt;. disqus is now a top-level entry (moved from author). Now has font, font_accent and google_fonts fields that are mandatory. Now defaults to the blog layout, old style is available via blog-by-tag layout, see archive.html.</summary></entry><entry><title type="html">Introducing Hydejack (v3)</title><link href="https://qwtel.com/hydejack/2016/03/08/introducing-hydejack/" rel="alternate" type="text/html" title="Introducing Hydejack (v3)" /><published>2016-03-08T00:00:00+01:00</published><updated>2016-03-08T00:00:00+01:00</updated><id>https://qwtel.com/hydejack/2016/03/08/introducing-hydejack</id><content type="html" xml:base="https://qwtel.com/hydejack/2016/03/08/introducing-hydejack/">&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 &lt;p&gt;Unlike Hyde, it’s very opinionated about how you are going to use it.&lt;/p&gt;
 
 &lt;p&gt;Features include:&lt;/p&gt;
@@ -151,21 +316,29 @@ See the &lt;a href=&quot;/hydejack/docs/6.3.0/&quot; class=&quot;heading&quot; d
 
 &lt;!--more--&gt;
 
+&lt;p class=&quot;message&quot;&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is outdated and only included for legacy reasons.
+See the &lt;a href=&quot;/hydejack/docs/6.4.0/&quot; class=&quot;heading&quot; data-flip=&quot;title&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
+
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
-&lt;p&gt;Hydejack is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/qwtel/hydejack&quot;&gt;GitHub repository&lt;/a&gt; for downloads, bug reports, and feature requests.&lt;/p&gt;
+&lt;p&gt;Hydejack is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/qwtel/hydejack&quot;&gt;GitHub repository&lt;/a&gt;
+for downloads, bug reports, and feature requests.&lt;/p&gt;
 
 &lt;h2 id=&quot;sidebar&quot;&gt;Sidebar&lt;/h2&gt;
 &lt;p&gt;I love the original Hyde theme, but unfortunately the layout isn’t as great on small screens.
 Since the sidebar moves to the top, the user has to scroll down just to read the title of a blog post.&lt;/p&gt;
 
-&lt;p&gt;By using a drawer component I was able to retain the original two column layout. It’s possible to move the drawer via touch input (with the help of a little JavaScript).&lt;/p&gt;
+&lt;p&gt;By using a drawer component I was able to retain the original two column layout.
+It’s possible to move the drawer via touch input (with the help of a little JavaScript).&lt;/p&gt;
 
-&lt;p&gt;Since the background image contributes to the feel of the page I’m letting it peek over the edge a bit. This also provides a hint to the user that an interaction is possible.&lt;/p&gt;
+&lt;p&gt;Since the background image contributes to the feel of the page I’m letting it peek over the edge a bit.
+This also provides a hint to the user that an interaction is possible.&lt;/p&gt;
 
 &lt;h2 id=&quot;manual&quot;&gt;Manual&lt;/h2&gt;
 
 &lt;h3 id=&quot;configuration&quot;&gt;Configuration&lt;/h3&gt;
-&lt;p&gt;You can configure important aspects of the theme via &lt;a href=&quot;https://github.com/qwtel/hydejack/blob/v3/_config.yml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;&lt;/a&gt;. This includes:&lt;/p&gt;
+&lt;p&gt;You can configure important aspects of the theme via
+&lt;a href=&quot;https://github.com/qwtel/hydejack/blob/v3/_config.yml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;&lt;/a&gt;.
+This includes:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;the blog description in the sidebar&lt;/li&gt;
@@ -185,11 +358,13 @@ Since the sidebar moves to the top, the user has to scroll down just to read the
 &lt;/div&gt;
 
 &lt;h3 id=&quot;how-to-add-a-new-tag&quot;&gt;How to Add a New Tag&lt;/h3&gt;
-&lt;p&gt;Tags are not meant to be used #instagram #style: #food #goodfood #happy #happylife #didimentionfood #yougetthepoint, as each tag requires some setup work. I tend to think of it as categories that can be combined.&lt;/p&gt;
+&lt;p&gt;Tags are not meant to be used #instagram #style: #food #goodfood #happy #happylife #didimentionfood #yougetthepoint,
+as each tag requires some setup work. I tend to think of it as categories that can be combined.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Add an entry to &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/tags.yml&lt;/code&gt;, where the key represents a slug and provide at least a &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; value and optionally &lt;code class=&quot;highlighter-rouge&quot;&gt;image&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;color&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt;.&lt;/p&gt;
+    &lt;p&gt;Add an entry to &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/tags.yml&lt;/code&gt;, where the key represents a slug and provide at least a &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; value and
+optionally &lt;code class=&quot;highlighter-rouge&quot;&gt;image&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;color&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt;.&lt;/p&gt;
 
     &lt;p&gt;Example &lt;code class=&quot;highlighter-rouge&quot;&gt;/_data/tags.yml&lt;/code&gt;:&lt;/p&gt;
 
@@ -199,7 +374,8 @@ Since the sidebar moves to the top, the user has to scroll down just to read the
     &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Make a new file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;tag&lt;/code&gt; folder, using the same name you’ve used as the key / slug and change the &lt;code class=&quot;highlighter-rouge&quot;&gt;tag&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;permalink&lt;/code&gt; entries.&lt;/p&gt;
+    &lt;p&gt;Make a new file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;tag&lt;/code&gt; folder, using the same name you’ve used as the key / slug and
+change the &lt;code class=&quot;highlighter-rouge&quot;&gt;tag&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;permalink&lt;/code&gt; entries.&lt;/p&gt;
 
     &lt;p&gt;Example &lt;code class=&quot;highlighter-rouge&quot;&gt;/tag/mytag.md&lt;/code&gt;:&lt;/p&gt;
 
@@ -226,14 +402,14 @@ They will appear in the listed order.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Florian Klampfer</name><email>f.klampfer@gmail.com</email></author><category term="hydejack" /><summary type="html">NOTE: This post is outdated and only included for legacy reasons. See the Documentation for up-to-date instructions. Features Unlike Hyde, it’s very opinionated about how you are going to use it. Features include: Touch-enabled sidebar / drawer for mobile, including fallback when JS is disabled. Github Pages compatible tag support based on this post. Customizable link color and sidebar image, per-site, per-tag and per-post. Optional author section at the bottom of each post. Optional comment section powered by Disqus. Layout for posts grouped by year Wide array of social media icons on sidebar. Math blocks via KaTeX.</summary></entry><entry><title type="html">Introducing Hyde</title><link href="https://qwtel.com/hydejack/2013/12/28/introducing-hyde/" rel="alternate" type="text/html" title="Introducing Hyde" /><published>2013-12-28T00:00:00+01:00</published><updated>2013-12-28T00:00:00+01:00</updated><id>https://qwtel.com/hydejack/2013/12/28/introducing-hyde</id><content type="html" xml:base="https://qwtel.com/hydejack/2013/12/28/introducing-hyde/">&lt;p&gt;Hyde is a brazen two-column &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that pairs a prominent sidebar with uncomplicated content. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
+&lt;/ol&gt;</content><author><name>Florian Klampfer</name><email>mail@qwtel.com</email></author><category term="hydejack" /><summary type="html">Features Unlike Hyde, it’s very opinionated about how you are going to use it. Features include: Touch-enabled sidebar / drawer for mobile, including fallback when JS is disabled. Github Pages compatible tag support based on this post. Customizable link color and sidebar image, per-site, per-tag and per-post. Optional author section at the bottom of each post. Optional comment section powered by Disqus. Layout for posts grouped by year Wide array of social media icons on sidebar. Math blocks via KaTeX.</summary></entry><entry><title type="html">Introducing Hyde</title><link href="https://qwtel.com/hydejack/2013/12/28/introducing-hyde/" rel="alternate" type="text/html" title="Introducing Hyde" /><published>2013-12-28T00:00:00+01:00</published><updated>2013-12-28T00:00:00+01:00</updated><id>https://qwtel.com/hydejack/2013/12/28/introducing-hyde</id><content type="html" xml:base="https://qwtel.com/hydejack/2013/12/28/introducing-hyde/">&lt;p&gt;Hyde is a brazen two-column &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that pairs a prominent sidebar with uncomplicated content. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
 
 &lt;h3 id=&quot;built-on-poole&quot;&gt;Built on Poole&lt;/h3&gt;
 
 &lt;p&gt;Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by &lt;a href=&quot;https://twitter.com/mdo&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;@mdo&lt;/code&gt;&lt;/a&gt;. Poole, and every theme built on it (like Hyde here) includes the following:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/hydejack/404&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/hydejack/feed.xml&quot; class=&quot;no-push-state&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/hydejack/about&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/hydejack/404&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/hydejack/feed.xml&quot; class=&quot;no-push-state&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/hydejack/about/&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
   &lt;li&gt;Mobile friendly design and development&lt;/li&gt;
   &lt;li&gt;Easily scalable text and component sizing with &lt;code class=&quot;highlighter-rouge&quot;&gt;rem&lt;/code&gt; units in the CSS&lt;/li&gt;
   &lt;li&gt;Support for a wide gamut of HTML elements&lt;/li&gt;
