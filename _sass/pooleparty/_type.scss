@@ -1,3 +1,4 @@
+@charset "UTF-8";
 // Typography
 //
 // Headings, body text, lists, and other misc typographic elements.
@@ -117,6 +118,7 @@ blockquote {
 .read-more {
   @extend .faded;
   margin-top: 2rem;
+  float: right;
 
   &::after {
     content: " \2192"; // →

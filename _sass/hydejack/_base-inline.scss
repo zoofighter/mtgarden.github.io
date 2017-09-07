@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * Global resets
  *
@@ -16,7 +17,6 @@ body, main {
 @media screen {
   body::before {
     content: '';
-    width: .5rem;
     background: $border-color;
     position: absolute;
     left: 0;
@@ -76,7 +76,7 @@ body, main {
 a, .a {
   position: relative;
   padding-bottom: .15rem;
-  border-bottom: 1px solid;
+  border-style: hidden;
   // transition: color 500ms, border-color 250ms ease;
   //
   // &:hover, &:focus {
@@ -139,5 +139,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mb6 {
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
 }
