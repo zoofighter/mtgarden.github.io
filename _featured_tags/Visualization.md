@@ -1,9 +1,9 @@
 ---
 layout: list
-title: Visaulization
-slug: Visaulization
+title: Visualization
+slug: Visualization
 menu: true
-order: 2
+order: 4
 description: >
   Hydejack is a pretentious two-column [Jekyll](http://jekyllrb.com/) theme, stolen by
   [`@qwtel`](https://twitter.com/qwtel) from [Hyde](http://hyde.getpoole.com).

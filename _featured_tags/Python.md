@@ -1,9 +1,9 @@
 ---
 layout: list
 title: Python
-slug: hyde
+slug: Python
 menu: true
-order: 3
+order: 2
 description: >
   Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.
   It’s based on Poole, the Jekyll butler.
