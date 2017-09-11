@@ -1,5 +1,4 @@
 ---
----
 layout: list
 title: Numpy
 slug: Numpy
