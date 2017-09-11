@@ -2,7 +2,7 @@
 ---
 layout: post
 title: '주식 클러스터링'
-tags: [etc]
+tags: [Etc]
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'sublimeText_jeklly'
-tags: [etc]
+tags: [Etc]
 
 ---
 

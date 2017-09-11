@@ -1,10 +1,8 @@
 ---
 layout: post
 title: 'jekyll 사용법1'
-tags: [etc]
-
+tags: [Etc]
 ---
-
 ## 사용법 1
 
 지킬 사용법 1 페이지는  

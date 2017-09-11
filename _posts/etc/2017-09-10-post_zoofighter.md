@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'zoofighter'
-tags: [etc]
+tags: [Etc]
 ---
 
 ## 사용법 1

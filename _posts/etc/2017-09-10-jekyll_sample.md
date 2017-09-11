@@ -2,7 +2,7 @@
 ---
 layout: post
 title: 'jekyll 사용법'
-tags: [etc]
+tags: [Etc]
 ---
 
 
