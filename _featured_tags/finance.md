@@ -1,9 +1,9 @@
 ---
 layout: list
-title: Numpy
-slug: Numpy
+title: finance
+slug: finance
 menu: true
-order: 3
+order: 5
 description: >
   Hydejack is a pretentious two-column [Jekyll](http://jekyllrb.com/) theme, stolen by
   [`@qwtel`](https://twitter.com/qwtel) from [Hyde](http://hyde.getpoole.com).

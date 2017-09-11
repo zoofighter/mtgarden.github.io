@@ -2,8 +2,7 @@
 layout: post
 title: 'jekyll 사용법1'
 tags: [etc]
-description: >
-  jekyll 사용법1'
+
 ---
 
 ## 사용법 1
@@ -11,6 +10,10 @@ description: >
 지킬 사용법 1 페이지는  
 
 https://nolboo.kim/blog/2013/10/15/free-blog-with-github-jekyll/
+https://nolboo.kim/blog/2013/10/06/github-for-beginner/
+
+포스트 작성법
+http://jekyllrb-ko.github.io/docs/posts/
 
 layout: post
 title: 'jekyll 사용법1'
@@ -19,7 +22,13 @@ description: > description ??
 
 tag 다는 것 섹션 나누는 것
 
-
+date: 2017-01-07 00:00:00
+categories: [blog, jekyll]
+author: "Bart Simpson"
+meta: "Springfield"
+comments: true
+description: >
+  jekyll description'
 
 
 The page now scores roughly 90/100 on [Google's PageSpeed Insights][gpsi] (up 
