@@ -23,8 +23,7 @@ description:         >
 # This should be the same author as first entry in `_data/authors.yml`
 author:
   name:              <Zoo> <Fighter>
-  email:             <zoofighter9@gmail.com+
-    >
+  email:             <zoofighter9@gmail.com>
 
 # Fallback image and color
 image:               /assets/img/u2_zooropa.jpg
