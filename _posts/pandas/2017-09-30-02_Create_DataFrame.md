@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Series'
+title: 'Create DataFrame'
 tags: [Pandas]
 comments: true
 ---

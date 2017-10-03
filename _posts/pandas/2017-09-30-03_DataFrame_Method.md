@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Series'
+title: 'DataFrame 메소드'
 tags: [Pandas]
 comments: true
 ---
