@@ -1,0 +1,95 @@
+
+git add .     
+git add -A
+git commit -m "171001-21:12"
+git push origin 
+
+jekyll serve -w
+
+----
+
+
+https://nolboo.kim/blog/2013/10/15/free-blog-with-github-jekyll/
+
+git remote add origin 저장소url
+
+
+git add .
+git commit -m "171001-21:12"
+git push origin 
+
+
+
+C:\onedrive\05_python\07_jekyll\mtgarden.github.io
+
+
+
+ctrl _ shift p : git _ status
+
+git log
+
+Reinitialized existing Git repository in C:/onedrive/05_python/07_jekyll/zoofighter.github.io/.git/
+
+git_costum command
+
+git config --global user.name "zoofighter"
+git config --global user.email "zoofighter9@gmail.com"
+---
+https://nolboo.kim/blog/2013/10/06/github-for-beginner/
+git remote add zoo https://github.com/zoofighter/myproject.git
+git remote add zoo https://github.com/zoofighter/zoofighter.github.io
+
+git remote set-url zoo git@github.com:zoofighter/OTHERREPOSITORY.git
+
+git remote set-url origin git@github.com:USERNAME/OTHERREPOSITORY.git
+
+git remote set-url zoo https://zoofighter@github.com/zoofighter/zoofighter.github.io.git
+git remote set-url zoo https://github.com/zoofighter/zoofighter.github.io
+출처: http://mygumi.tistory.com/74 [마이구미의 HelloWorld]
+
+error: src refspec master does not match any.
+
+
+https://github.com/zoofighter/zoofighter.github.io.git
+
+https://github.com/username/username.github.io.git
+from:
+https://xho95.github.io/blog/github/jekyll/git/2016/01/11/Make-a-blog-with-Jekyll.html
+
+git config --list
+
+remote.origin.url=https://github.com/zoofighter/zoofighter.github.io.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+
+
+
+2 
+
+1. git config --global --edit
+git config --list
+
+1 git global 설정
+2 git init
+2 git remote add origin https://github.com/zoofighter/zoofighter.github.io.git
+git add . 
+git commit -m "message"
+git push origin master
+
+git remote set-url origin git@github.com:zoofighter/zoofighter.github.io.git
+git remote set-url origin https://github.com/zoofighter/zoofighter.github.io.git
+remote: Permission to zoofighter/zoofighter.github.io.git denied to mtgarden.
+
+
+
+출처: http://mygumi.tistory.com/74 [마이구미의 HelloWorld]
+
+
+
+--
+echo "# zoofighter.github.io" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/zoofighter/zoofighter.github.io.git
+git push -u origin master
