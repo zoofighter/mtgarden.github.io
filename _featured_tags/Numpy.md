@@ -5,8 +5,5 @@ slug: Numpy
 menu: true
 order: 3
 description: >
-  Hydejack is a pretentious two-column [Jekyll](http://jekyllrb.com/) theme, stolen by
-  [`@qwtel`](https://twitter.com/qwtel) from [Hyde](http://hyde.getpoole.com).
-  You could say it was.. [hydejacked](http://media3.giphy.com/media/makedRIckZBW8/giphy.gif).
-  Open `_featured_tags/hydejack.md` to edit this text.
+  Pandas는 Python의 데이터를 다루는 용도의 대표 모듈 중에 하나임. Pandas를 사용하면 사용하면 몇줄의 코드만으로 Data를 쉽고 강력하게 처리할 수 있음. Pandas는 외워야 할 것이 많아서 정리를 잘 해두지 않으면 안됨.
 ---
