@@ -10,8 +10,8 @@ url:                 https://zoofighter.github.io
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
-baseurl:             https://zoofighter.github.io
-
+baseurl:            
+  
 # A very short description of your page
 tagline:             A pretentious two-column Jekyll theme.
 
