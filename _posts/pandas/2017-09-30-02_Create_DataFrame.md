@@ -2,7 +2,8 @@
 layout: post
 title: '02_Create DataFrame'
 tags: [Pandas]
-
+layout: default
+comments: true
 ---
 
 <div class="cell border-box-sizing text_cell rendered">
