@@ -3,7 +3,6 @@ layout: post
 title: '04_Index Object'
 tags: [Pandas]
 ---
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>

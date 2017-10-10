@@ -4,7 +4,6 @@ title: '03_DataFrame 메소드'
 tags: [Pandas]
 
 ---
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
