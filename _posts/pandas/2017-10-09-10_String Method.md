@@ -2,8 +2,6 @@
 layout: post
 title: '10_문자함수'
 tags: [Pandas]
-layout: default
-comments: true
 ---
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">

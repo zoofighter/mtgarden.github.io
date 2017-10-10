@@ -2,8 +2,6 @@
 layout: post
 title: '07_select rows from columns value'
 tags: [Pandas]
-layout: default
-comments: true
 ---
 <div class="prompt input_prompt">
 </div>
