@@ -5,5 +5,5 @@ slug: Numpy
 menu: true
 order: 3
 description: >
-  Pandas는 Python의 데이터를 다루는 용도의 대표 모듈 중에 하나임. Pandas를 사용하면 사용하면 몇줄의 코드만으로 Data를 쉽고 강력하게 처리할 수 있음. Pandas는 외워야 할 것이 많아서 정리를 잘 해두지 않으면 안됨.
+ 파이썬으로 수치해석, 통계 관련 기능을 구현한다고 할 때 Numpy는 가장 기본이 되는 모듈이다. 벡터화 연산(vectorized operation)을 사용하여 간단한 코드로도 복잡한 선형 대수 연산을 수행할 수 있다
 ---
