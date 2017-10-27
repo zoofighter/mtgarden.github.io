@@ -409,7 +409,7 @@ tags: [Pandas]
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Index객체의 속성을 사용하여 컬럼의 이름을 하나로 축약</span>
 <span class="n">gpby</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Season&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">tu_dic</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-<span class="n">gpby</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Index</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span> <span class="s1">&#39;_&#39;</span><span class="o">+</span> <span class="n">e</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">gpby</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()])</span> 
+<span class="n">gpby</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Index</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span> <span class="s1">&#39;_&#39;</span><span class="o">+</span> <span class="n">e</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">gpby</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()])</span>
 <span class="n">gpby</span>
 </pre></div>
 
@@ -476,5 +476,3 @@ tags: [Pandas]
 </div>
 
 </div>
- 
-
