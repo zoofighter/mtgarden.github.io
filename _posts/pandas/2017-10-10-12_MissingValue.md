@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '12_MissingValue'
+title: '12 MissingValue'
 tags: [Pandas]
 ---
 <div class="cell border-box-sizing text_cell rendered">

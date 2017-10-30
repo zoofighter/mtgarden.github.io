@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '13_Apply Method'
+title: '13 Apply Method'
 tags: [Pandas]
 ---
 <div class="cell border-box-sizing text_cell rendered">
