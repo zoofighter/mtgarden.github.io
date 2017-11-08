@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '01_matplotlib_pyplot'
+title: '01 matplotlib_pyplot'
 tags: [Visualization]
 ---
 

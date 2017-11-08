@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '04_stock_clustring'
+title: '04 stock_clustring'
 tags: [Visualization]
 ---
 
