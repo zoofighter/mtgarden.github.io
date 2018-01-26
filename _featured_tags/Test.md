@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Test
-slug: Test
+title: Finance
+slug: Finance
 menu: true
 order: 7
 description: >
