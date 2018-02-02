@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .sidebar-social {
   // margin-bottom: .5rem;
   //
@@ -34,24 +33,4 @@
     //   margin-top: 0;
     // }
   }
-}
-
-.share {
-  text-align: right;
-  
-  span {
-    margin-right:12px;
-    font-size:28px;
-  }
-
-  @media screen and (min-width: $break-point-3) {
-    span {
-      font-size:30px;
-    }
-  }
-
-}
-
-.share-body {
-  float:right;
 }

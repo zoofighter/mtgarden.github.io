@@ -1,4 +1,3 @@
-@charset "UTF-8";
 $gray: #9a9a9a;
 $gray-bg: #f9f9f9;
 $gray-text: #787878;
@@ -19,10 +18,10 @@ $code-color: inherit;
 
 $break-point-1: 40em;
 $break-point-2: 54em;
-$break-point-3: 72em;
-$break-point-4: 88em;
-$break-point-5: 96em;
-$break-point-dynamic: 102em;
+$break-point-3: 60em;
+$break-point-4: 72em;
+$break-point-5: 92em;
+$break-point-dynamic: 97.5em;
 $break-point-font-large: 125em;
 
 $dynamic-width: calc(50% - 28rem);

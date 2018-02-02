@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @media screen {
   .y-drawer-scrim {
     z-index: 2;
@@ -6,9 +5,12 @@
 
   .y-drawer-content {
     width: 18rem;
-    left: -18rem;
+    left: -17.5rem;
     z-index: 3;
 
+    @media (min-width: $break-point-dynamic) {
+      width: $dynamic-width;
+    }
   }
 
   // header, body::before {
